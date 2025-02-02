@@ -1,0 +1,53 @@
+post http://localhost:3000/register
+content-type:application/json
+{
+  "username": "adam_richard2",
+  "password": "richaqw",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+post http://localhost:3000/login
+content-type:application/json
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+get http://localhost:3000/user/tweets/feed/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+get http://localhost:3000/user/following/
+
+
+get http://localhost:3000/user/tweets/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+
+get http://localhost:3000/tweets/2/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+
+get http://localhost:3000/tweets/1/likes/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+
+get http://localhost:3000/tweets/2/replies/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+
+
+post http://localhost:3000/user/tweets/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+content-type:application/json
+{
+   "tweet": "The Mornings..."
+}
+
+
+delete http://localhost:3000/tweets/3/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
+
+
+get http://localhost:3000/user/followers/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzMyOTgwNzY3fQ.kyKTe4L3rkkKB4RUUic-KhZmEqNg4yAj8BFJC9cosbY
